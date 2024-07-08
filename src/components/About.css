@@ -1,0 +1,58 @@
+.about {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  
+  .about-text p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+  }
+  
+  .skills {
+    flex: 1;
+  }
+  
+  .skills h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .skills li:hover {
+    transform: translateX(5px);
+    background-color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .skills {
+      width: 100%;
+    }
+  }
